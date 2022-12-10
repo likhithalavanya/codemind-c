@@ -1,12 +1,12 @@
 #include<stdio.h>
-int cars(int n);
+void cars(int n);
 int main()
 {
     int n;
     scanf("%d",&n);
-    int x=cars(n);
+    cars(n);
 }
-int cars(int n)
+void cars(int n)
 {
     if(n%4==0)
     {
@@ -15,6 +15,5 @@ int cars(int n)
     else
     {
         printf("%d",(n/4)+1);
-    }
-    return 0;
+    }    
 }
