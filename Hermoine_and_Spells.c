@@ -19,5 +19,5 @@ void spells(int a,int b,int c)
     else if(c>b && a>b)
     {
         printf("%d",c+a);
-    }    
+    }
 }
