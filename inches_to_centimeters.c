@@ -1,12 +1,12 @@
 #include<stdio.h>
-int inches(int h);
+void inches(int h);
 int main()
 {
     int h;
     scanf("%d",&h);
-    int x=inches(h);
+    inches(h);
 }
-int inches(int h)
+void inches(int h)
 {
     float i;
     i=2.54*h;
