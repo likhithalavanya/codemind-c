@@ -1,15 +1,15 @@
 #include<stdio.h>
 int main()
 {
-    int n,k,m,x;
+    int n,k,m;
     scanf("%d%d%d",&n,&k,&m);
-     x=k*m;
-    if (n%x==0)
+    int cpb=k*m;
+    if (n%cpb==0)
     {
-        printf("%d",n/x);
+        printf("%d",n/cpb);
     }
     else 
     {
-        printf("%d",n/x+1);
+        printf("%d",n/cpb+1);
     }
 }
