@@ -1,12 +1,12 @@
 #include<stdio.h>
-int measure(int w,int x,int y,int z);
+void measure(int w,int x,int y,int z);
 int main()
 {
     int w,x,y,z;
     scanf("%d%d%d%d",&w,&x,&y,&z);
-    int m=measure(w,x,y,z);
+    measure(w,x,y,z);
 }
-int measure(int w,int x,int y,int z)
+void measure(int w,int x,int y,int z)
 {
     if(w==x || w==y || w==z)
     {
@@ -24,5 +24,4 @@ int measure(int w,int x,int y,int z)
     {
         printf("NO");
     }
-    return 0;
 }
