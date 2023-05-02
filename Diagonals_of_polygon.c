@@ -1,8 +1,15 @@
 #include<stdio.h>
+int poly(int n);
 int main()
 {
-    int n,d;
+    int n;
     scanf("%d",&n);
-    d=n*(n-3)/2;
-    printf("%d",d);
+    int x=poly(n);
+}
+int poly(int n)
+{
+    int a;
+    a=(n*(n-3)*0.5);
+    printf("%d",a);
+    return a;
 }
