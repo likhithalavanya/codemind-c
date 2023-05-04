@@ -1,12 +1,12 @@
 #include<stdio.h>
-int cp(int n);
+void cp(int n);
 int main()
 {
     int n;
     scanf("%d",&n);
-    int x=cp(n);
+    cp(n);
 }
-int cp(int n)
+void cp(int n)
 {
     int i,j,c=0,co=0;
     for(i=1;i<=n;i++)
@@ -28,5 +28,4 @@ int cp(int n)
         }
     }
     printf("%d",co);
-    return co;
 }
