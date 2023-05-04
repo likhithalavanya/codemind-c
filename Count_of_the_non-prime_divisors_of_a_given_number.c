@@ -1,8 +1,14 @@
 #include<stdio.h>
+int cp(int n);
 int main()
 {
-    int n,i,j,c=0,co=0;
+    int n;
     scanf("%d",&n);
+    int x=cp(n);
+}
+int cp(int n)
+{
+    int i,j,c=0,co=0;
     for(i=1;i<=n;i++)
     {
         if(n%i==0)
@@ -22,4 +28,5 @@ int main()
         }
     }
     printf("%d",co);
+    return co;
 }
