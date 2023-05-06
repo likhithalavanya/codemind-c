@@ -1,14 +1,12 @@
 #include<stdio.h>
-void value(char a);
+
 int main()
+
 {
     char a;
-    scanf("%s",&a);
-    value(a);
-}    
-void value(char a)
-{
     int i;
+    scanf("%s",&a);
     i=a;
     printf("%d",i);
+    return 0;
 }
