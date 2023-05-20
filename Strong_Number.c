@@ -1,21 +1,21 @@
 #include<stdio.h>
 int main()
 {
-    int r,n,m,i,s=0,f=1;
+    int n,q,r,i,wt=1,s=0;
     scanf("%d",&n);
-    m=n;
-    while(m>0)
+    q=n;
+    while(q!=0)
     {
-        r=m%10;
-        m=m/10;
-        f=1;
-        for(r;r>=1;r--)
+        r=q%10;
+        for(i=1;i<=r;i++)
         {
-            f*=r;
+            wt=wt*i;
         }
-        s+=f;
+        s=s+wt;
+        wt=1;
+        q=q/10;
     }
-    if(n==s)
+    if(s==n)
     {
         printf("The number %d is a strong number",n);
     }
